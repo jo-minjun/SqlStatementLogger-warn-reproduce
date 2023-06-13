@@ -1,13 +1,9 @@
 package com.me.sqlstatementloggerwarnreproduce;
 
 import jakarta.persistence.*;
-import java.time.Instant;
-import java.util.HashSet;
-import java.util.Set;
-import lombok.*;
-import org.hibernate.annotations.BatchSize;
-import org.springframework.data.annotation.LastModifiedBy;
-import org.springframework.data.annotation.LastModifiedDate;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor

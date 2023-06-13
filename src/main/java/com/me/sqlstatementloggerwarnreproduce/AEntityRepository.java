@@ -7,10 +7,10 @@ import org.springframework.data.jpa.repository.Query;
 public interface AEntityRepository extends JpaRepository<AEntity, Long> {
 
   @Query(value = """
-      (SELECT * FROM a_entity a1 ORDER BY id ASC LIMIT 100)
+      (SELECT * FROM a_entity a1)
       UNION
-      (SELECT * FROM a_entity a2 ORDER BY id ASC LIMIT 100)
-      LIMIT 100
+      (SELECT * FROM a_entity a2)
+      ORDER BY id ASC
       """, nativeQuery = true)
   List<AEntity> findWithNativeQuery();
 }
