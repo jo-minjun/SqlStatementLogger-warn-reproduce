@@ -36,3 +36,16 @@
       at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:123) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
       at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:106) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
   ```
+
+---
+
+## [Hibernate Forums Topic: sqlstatementlogger-produce-the-warning-log](https://discourse.hibernate.org/t/sqlstatementlogger-produce-the-warning-log/7824)
+
+- I tried updating to 6.2.5.Final. But it's still occurred.
+  ```groovy
+  implementation('org.springframework.boot:spring-boot-starter-data-jpa') {
+      exclude group: 'org.hibernate.orm', module: 'hibernate-core'
+  }
+  implementation 'org.hibernate.orm:hibernate-core:6.2.5.Final'
+  ```
+  ![hibernate:6.2.5.Final](./hibernate:6.2.5.Final.png)
